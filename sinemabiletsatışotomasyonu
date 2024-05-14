@@ -1,0 +1,2011 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.InteropServices;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SinemaBiletSatışOtomasyonu
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+
+            int hak = 3;
+
+
+
+
+            Console.WriteLine("Sinema Solanuna Hoşgeldiniz");
+            Console.WriteLine("*****************************************");
+            while (true)
+            {
+                Console.WriteLine("Filmlerimiz Görmek İçin Lütfen 1'e Basınız");
+                int secim = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("*********************************");
+
+                if (secim == 1)
+                {
+
+                    Console.WriteLine("1)Babam ve Oğlum");
+                    Console.WriteLine("------------------");
+                    Console.WriteLine("2)The GodFather");
+                    Console.WriteLine("-----------------");
+                    Console.WriteLine("3)Dövüş Kulübü");
+                    Console.WriteLine("------------------");
+                    Console.WriteLine("4)Ucuz Roman");
+                    Console.WriteLine("------------------");
+                    Console.WriteLine("5)Testere 5");
+                    Console.WriteLine("*********************");
+
+                    Console.WriteLine("Lütfen İzlemek İstediğiniz Filmin Başında Bulunan Sayılardan İsteyebilirsiniz.");
+
+                    string film = Console.ReadLine();
+
+                    if (film == "1")
+                    {
+                        BabamOglum();
+
+
+                    }
+
+                    else if (film == "2")
+                    {
+                        GodFather();
+                    }
+                    else if (film == "3")
+                    {
+                        DovusKulubu();
+                    }
+                    else if (film == "4")
+                    {
+                        UcuzRoman();
+                    }
+                    else if (film == "5")
+                    {
+                        Testere();
+                    }
+
+                    else if (secim != 1)
+                    {
+                        Console.WriteLine("Yazdığınızı Anlamadım Tekrar Deneyiniz");
+                        hak -= 1;
+
+                        if (hak > 0)
+
+                        {
+                            Console.WriteLine("Lütfen Tekrar Deneyiniz");
+                            hak -= 1;
+                        }
+                        if (hak == 0)
+                        {
+                            Console.WriteLine("Tekrar Hakkınız Kalmadı İyi Akşamlar");
+
+                        }
+
+
+                    }
+                }
+
+
+                Console.ReadLine();
+            }
+
+        }
+        private static void BabamOglum()
+        {
+            Console.WriteLine("Babam ve Oğlum İçin Bilet Fiyatlarımız Aşşağıdaki Fiyat Listesidir.");
+            Console.WriteLine("--------------------------------------------------------------------");
+            Console.WriteLine("a) Öğrenci: 100 TL");
+            Console.WriteLine("-----------------");
+            Console.WriteLine("b) Yetişkin: 150 TL");
+            Console.WriteLine("Öğrenci Bileti Almak için a'ya Basınız.");
+            Console.WriteLine("Yetişkin Bileti Almak İçin b'ye Basınız.");
+            string secim2 = Console.ReadLine();
+            if (secim2 == "a")
+            {
+                Console.WriteLine("Borcunuz 100 TL'dir");
+                Console.WriteLine("*******************************************");
+                Console.WriteLine("Koltuk Numaranızızı Lütfen Ekrandan Seçip Sırasını Ve Koltuk Numarasını Yazınız.");
+                Console.WriteLine("*******************************************************************************");
+                Console.WriteLine("1.Sıra***1-2--3-4--5-6--7-8**M");
+                Console.WriteLine("2.Sıra***1-2--3-4--5-6--7-8**E");
+                Console.WriteLine("3.Sıra***1-2--3-4--5-6--7-8**R");
+                Console.WriteLine("4.Sıra***1-2--3-4--5-6--7-8**D");
+                Console.WriteLine("5.Sıra***1-2--3-4--5-6--7-8**İ");
+                Console.WriteLine("6.Sıra***1-2--3-4--5-6--7-8**V");
+                Console.WriteLine("7.Sıra***1-2--3-4--5-6--7-8**E");
+                Console.WriteLine("8.Sıra***1-2--3-4--5-6--7-8**N");
+                Console.WriteLine("/////////////PERDE////////////");
+                Console.WriteLine("*****************************************");
+                Console.WriteLine("Örnek: 1-12 YA DA 2-89 GİBİ YAZINIZ:)");
+
+                string secım3 = Console.ReadLine();
+
+                if (secım3 == "1-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "1-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "1-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "1-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "2-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "2-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "2-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "2-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "3-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "3-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "3-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "3-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "4-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "4-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "4-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "4-89")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "5-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "5-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "5-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "5-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "5-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "6-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "6-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "6-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "6-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "7-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "7-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "7-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "7-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "8-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "8-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "8-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "8-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+            }
+            else if (secim2 == "b")
+            {
+                Console.WriteLine("Borcunuz 150 TL'dir");
+                Console.WriteLine("*******************************************");
+                Console.WriteLine("Koltuk Numaranızızı Lütfen Ekrandan Seçiniz.");
+                Console.WriteLine("_______________________________________________");
+                Console.WriteLine("1.Sıra***1-2--3-4--5-6--7-8**M");
+                Console.WriteLine("2.Sıra***1-2--3-4--5-6--7-8**E");
+                Console.WriteLine("3.Sıra***1-2--3-4--5-6--7-8**R");
+                Console.WriteLine("4.Sıra***1-2--3-4--5-6--7-8**D");
+                Console.WriteLine("5.Sıra***1-2--3-4--5-6--7-8**İ");
+                Console.WriteLine("6.Sıra***1-2--3-4--5-6--7-8**V");
+                Console.WriteLine("7.Sıra***1-2--3-4--5-6--7-8**E");
+                Console.WriteLine("8.Sıra***1-2--3-4--5-6--7-8**N");
+                Console.WriteLine("/////////////PERDE////////////");
+                Console.WriteLine("__________________________________");
+                Console.WriteLine("Örnek: 1-12 YA DA 2-89 GİBİ YAZINIZ:)");
+                string secım3 = Console.ReadLine();
+                if (secım3 == "1-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "1-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "1-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "1-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "2-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "2-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "2-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "2-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "3-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "3-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "3-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "3-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "4-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "4-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "4-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "4-89")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "5-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "5-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "5-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "5-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "5-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "6-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "6-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "6-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "6-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "7-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "7-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "7-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "7-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "8-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "8-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "8-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "8-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+            }
+
+            }
+        private static void GodFather()
+        {
+            Console.WriteLine("The Godfather İçin Bilet Fiyatlarımız Aşşağıdaki Fiyat Listesidir.");
+            Console.WriteLine("--------------------------------------------------------------------");
+            Console.WriteLine("a) Öğrenci: 100 TL");
+            Console.WriteLine("-----------------");
+            Console.WriteLine("b) Yetişkin: 150 TL");
+            Console.WriteLine("Öğrenci Bileti Almak için a'ya Basınız.");
+            Console.WriteLine("Yetişkin Bileti Almak İçin b'ye Basınız.");
+            string secim2 = Console.ReadLine();
+            if (secim2 == "a")
+            {
+                Console.WriteLine("Borcunuz 100 TL'dir");
+                Console.WriteLine("*******************************************");
+                Console.WriteLine("Koltuk Numaranızızı Lütfen Ekrandan Seçip Sırasını Ve Koltuk Numarasını Yazınız.");
+                Console.WriteLine("*******************************************************************************");
+                Console.WriteLine("1.Sıra***1-2--3-4--5-6--7-8**M");
+                Console.WriteLine("2.Sıra***1-2--3-4--5-6--7-8**E");
+                Console.WriteLine("3.Sıra***1-2--3-4--5-6--7-8**R");
+                Console.WriteLine("4.Sıra***1-2--3-4--5-6--7-8**D");
+                Console.WriteLine("5.Sıra***1-2--3-4--5-6--7-8**İ");
+                Console.WriteLine("6.Sıra***1-2--3-4--5-6--7-8**V");
+                Console.WriteLine("7.Sıra***1-2--3-4--5-6--7-8**E");
+                Console.WriteLine("8.Sıra***1-2--3-4--5-6--7-8**N");
+                Console.WriteLine("/////////////PERDE////////////");
+                Console.WriteLine("*****************************************");
+                Console.WriteLine("Örnek: 1-12 YA DA 2-89 GİBİ YAZINIZ:)");
+
+                string secım3 = Console.ReadLine();
+
+                if (secım3 == "1-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "1-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "1-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "1-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "2-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "2-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "2-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "2-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "3-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "3-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "3-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "3-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "4-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "4-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "4-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "4-89")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "5-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "5-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "5-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "5-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "5-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "6-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "6-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "6-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "6-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "7-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "7-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "7-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "7-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "8-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "8-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "8-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "8-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+            }
+            else if (secim2 == "b")
+            {
+                Console.WriteLine("Borcunuz 150 TL'dir");
+                Console.WriteLine("*******************************************");
+                Console.WriteLine("Koltuk Numaranızızı Lütfen Ekrandan Seçiniz.");
+                Console.WriteLine("_______________________________________________");
+                Console.WriteLine("1.Sıra***1-2--3-4--5-6--7-8**M");
+                Console.WriteLine("2.Sıra***1-2--3-4--5-6--7-8**E");
+                Console.WriteLine("3.Sıra***1-2--3-4--5-6--7-8**R");
+                Console.WriteLine("4.Sıra***1-2--3-4--5-6--7-8**D");
+                Console.WriteLine("5.Sıra***1-2--3-4--5-6--7-8**İ");
+                Console.WriteLine("6.Sıra***1-2--3-4--5-6--7-8**V");
+                Console.WriteLine("7.Sıra***1-2--3-4--5-6--7-8**E");
+                Console.WriteLine("8.Sıra***1-2--3-4--5-6--7-8**N");
+                Console.WriteLine("/////////////PERDE////////////");
+                Console.WriteLine("__________________________________");
+                Console.WriteLine("Örnek: 1-12 YA DA 2-89 GİBİ YAZINIZ:)");
+                string secım3 = Console.ReadLine();
+                if (secım3 == "1-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "1-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "1-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "1-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "2-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "2-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "2-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "2-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "3-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "3-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "3-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "3-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "4-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "4-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "4-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "4-89")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "5-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "5-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "5-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "5-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "5-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "6-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "6-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "6-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "6-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "7-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "7-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "7-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "7-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "8-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "8-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "8-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "8-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+            }
+
+        
+    }
+        private static void Testere()
+        {
+            Console.WriteLine("Testere 5  İçin Bilet Fiyatlarımız Aşşağıdaki Fiyat Listesidir.");
+            Console.WriteLine("--------------------------------------------------------------------");
+            Console.WriteLine("a) Öğrenci: 100 TL");
+            Console.WriteLine("-----------------");
+            Console.WriteLine("b) Yetişkin: 150 TL");
+            Console.WriteLine("Öğrenci Bileti Almak için a'ya Basınız.");
+            Console.WriteLine("Yetişkin Bileti Almak İçin b'ye Basınız.");
+            string secim2 = Console.ReadLine();
+            if (secim2 == "a")
+            {
+                Console.WriteLine("Borcunuz 100 TL'dir");
+                Console.WriteLine("*******************************************");
+                Console.WriteLine("Koltuk Numaranızızı Lütfen Ekrandan Seçip Sırasını Ve Koltuk Numarasını Yazınız.");
+                Console.WriteLine("*******************************************************************************");
+                Console.WriteLine("1.Sıra***1-2--3-4--5-6--7-8**M");
+                Console.WriteLine("2.Sıra***1-2--3-4--5-6--7-8**E");
+                Console.WriteLine("3.Sıra***1-2--3-4--5-6--7-8**R");
+                Console.WriteLine("4.Sıra***1-2--3-4--5-6--7-8**D");
+                Console.WriteLine("5.Sıra***1-2--3-4--5-6--7-8**İ");
+                Console.WriteLine("6.Sıra***1-2--3-4--5-6--7-8**V");
+                Console.WriteLine("7.Sıra***1-2--3-4--5-6--7-8**E");
+                Console.WriteLine("8.Sıra***1-2--3-4--5-6--7-8**N");
+                Console.WriteLine("/////////////PERDE////////////");
+                Console.WriteLine("*****************************************");
+                Console.WriteLine("Örnek: 1-12 YA DA 2-89 GİBİ YAZINIZ:)");
+
+                string secım3 = Console.ReadLine();
+
+                if (secım3 == "1-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "1-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "1-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "1-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "2-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "2-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "2-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "2-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "3-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "3-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "3-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "3-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "4-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "4-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "4-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "4-89")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "5-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "5-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "5-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "5-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "5-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "6-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "6-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "6-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "6-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "7-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "7-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "7-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "7-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "8-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "8-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "8-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "8-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+            }
+            else if (secim2 == "b")
+            {
+                Console.WriteLine("Borcunuz 150 TL'dir");
+                Console.WriteLine("*******************************************");
+                Console.WriteLine("Koltuk Numaranızızı Lütfen Ekrandan Seçiniz.");
+                Console.WriteLine("_______________________________________________");
+                Console.WriteLine("1.Sıra***1-2--3-4--5-6--7-8**M");
+                Console.WriteLine("2.Sıra***1-2--3-4--5-6--7-8**E");
+                Console.WriteLine("3.Sıra***1-2--3-4--5-6--7-8**R");
+                Console.WriteLine("4.Sıra***1-2--3-4--5-6--7-8**D");
+                Console.WriteLine("5.Sıra***1-2--3-4--5-6--7-8**İ");
+                Console.WriteLine("6.Sıra***1-2--3-4--5-6--7-8**V");
+                Console.WriteLine("7.Sıra***1-2--3-4--5-6--7-8**E");
+                Console.WriteLine("8.Sıra***1-2--3-4--5-6--7-8**N");
+                Console.WriteLine("/////////////PERDE////////////");
+                Console.WriteLine("__________________________________");
+                Console.WriteLine("Örnek: 1-12 YA DA 2-89 GİBİ YAZINIZ:)");
+                string secım3 = Console.ReadLine();
+                if (secım3 == "1-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "1-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "1-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "1-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "2-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "2-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "2-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "2-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "3-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "3-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "3-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "3-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "4-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "4-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "4-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "4-89")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "5-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "5-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "5-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "5-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "5-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "6-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "6-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "6-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "6-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "7-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "7-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "7-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "7-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "8-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "8-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "8-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "8-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+            }
+
+        }
+        private static void UcuzRoman()
+        {
+            Console.WriteLine("Ucuz Roman İçin Bilet Fiyatlarımız Aşşağıdaki Fiyat Listesidir.");
+            Console.WriteLine("--------------------------------------------------------------------");
+            Console.WriteLine("a) Öğrenci: 100 TL");
+            Console.WriteLine("-----------------");
+            Console.WriteLine("b) Yetişkin: 150 TL");
+            Console.WriteLine("Öğrenci Bileti Almak için a'ya Basınız.");
+            Console.WriteLine("Yetişkin Bileti Almak İçin b'ye Basınız.");
+            string secim2 = Console.ReadLine();
+            if (secim2 == "a")
+            {
+                Console.WriteLine("Borcunuz 100 TL'dir");
+                Console.WriteLine("*******************************************");
+                Console.WriteLine("Koltuk Numaranızızı Lütfen Ekrandan Seçip Sırasını Ve Koltuk Numarasını Yazınız.");
+                Console.WriteLine("*******************************************************************************");
+                Console.WriteLine("1.Sıra***1-2--3-4--5-6--7-8**M");
+                Console.WriteLine("2.Sıra***1-2--3-4--5-6--7-8**E");
+                Console.WriteLine("3.Sıra***1-2--3-4--5-6--7-8**R");
+                Console.WriteLine("4.Sıra***1-2--3-4--5-6--7-8**D");
+                Console.WriteLine("5.Sıra***1-2--3-4--5-6--7-8**İ");
+                Console.WriteLine("6.Sıra***1-2--3-4--5-6--7-8**V");
+                Console.WriteLine("7.Sıra***1-2--3-4--5-6--7-8**E");
+                Console.WriteLine("8.Sıra***1-2--3-4--5-6--7-8**N");
+                Console.WriteLine("/////////////PERDE////////////");
+                Console.WriteLine("*****************************************");
+                Console.WriteLine("Örnek: 1-12 YA DA 2-89 GİBİ YAZINIZ:)");
+
+                string secım3 = Console.ReadLine();
+
+                if (secım3 == "1-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "1-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "1-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "1-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "2-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "2-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "2-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "2-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "3-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "3-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "3-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "3-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "4-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "4-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "4-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "4-89")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "5-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "5-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "5-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "5-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "5-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "6-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "6-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "6-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "6-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "7-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "7-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "7-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "7-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "8-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "8-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "8-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "8-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+            }
+            else if (secim2 == "b")
+            {
+                Console.WriteLine("Borcunuz 150 TL'dir");
+                Console.WriteLine("*******************************************");
+                Console.WriteLine("Koltuk Numaranızızı Lütfen Ekrandan Seçiniz.");
+                Console.WriteLine("_______________________________________________");
+                Console.WriteLine("1.Sıra***1-2--3-4--5-6--7-8**M");
+                Console.WriteLine("2.Sıra***1-2--3-4--5-6--7-8**E");
+                Console.WriteLine("3.Sıra***1-2--3-4--5-6--7-8**R");
+                Console.WriteLine("4.Sıra***1-2--3-4--5-6--7-8**D");
+                Console.WriteLine("5.Sıra***1-2--3-4--5-6--7-8**İ");
+                Console.WriteLine("6.Sıra***1-2--3-4--5-6--7-8**V");
+                Console.WriteLine("7.Sıra***1-2--3-4--5-6--7-8**E");
+                Console.WriteLine("8.Sıra***1-2--3-4--5-6--7-8**N");
+                Console.WriteLine("/////////////PERDE////////////");
+                Console.WriteLine("__________________________________");
+                Console.WriteLine("Örnek: 1-12 YA DA 2-89 GİBİ YAZINIZ:)");
+                string secım3 = Console.ReadLine();
+                if (secım3 == "1-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "1-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "1-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "1-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "2-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "2-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "2-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "2-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "3-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "3-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "3-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "3-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "4-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "4-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "4-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "4-89")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "5-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "5-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "5-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "5-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "5-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "6-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "6-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "6-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "6-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "7-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "7-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "7-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "7-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "8-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "8-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "8-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "8-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+            }
+
+        }
+        private static void DovusKulubu()
+        {
+            Console.WriteLine("Dövüş Kulübü İçin Bilet Fiyatlarımız Aşşağıdaki Fiyat Listesidir.");
+            Console.WriteLine("--------------------------------------------------------------------");
+            Console.WriteLine("a) Öğrenci: 100 TL");
+            Console.WriteLine("-----------------");
+            Console.WriteLine("b) Yetişkin: 150 TL");
+            Console.WriteLine("Öğrenci Bileti Almak için a'ya Basınız.");
+            Console.WriteLine("Yetişkin Bileti Almak İçin b'ye Basınız.");
+            string secim2 = Console.ReadLine();
+            if (secim2 == "a")
+            {
+                Console.WriteLine("Borcunuz 100 TL'dir");
+                Console.WriteLine("*******************************************");
+                Console.WriteLine("Koltuk Numaranızızı Lütfen Ekrandan Seçip Sırasını Ve Koltuk Numarasını Yazınız.");
+                Console.WriteLine("*******************************************************************************");
+                Console.WriteLine("1.Sıra***1-2--3-4--5-6--7-8**M");
+                Console.WriteLine("2.Sıra***1-2--3-4--5-6--7-8**E");
+                Console.WriteLine("3.Sıra***1-2--3-4--5-6--7-8**R");
+                Console.WriteLine("4.Sıra***1-2--3-4--5-6--7-8**D");
+                Console.WriteLine("5.Sıra***1-2--3-4--5-6--7-8**İ");
+                Console.WriteLine("6.Sıra***1-2--3-4--5-6--7-8**V");
+                Console.WriteLine("7.Sıra***1-2--3-4--5-6--7-8**E");
+                Console.WriteLine("8.Sıra***1-2--3-4--5-6--7-8**N");
+                Console.WriteLine("/////////////PERDE////////////");
+                Console.WriteLine("*****************************************");
+                Console.WriteLine("Örnek: 1-12 YA DA 2-89 GİBİ YAZINIZ:)");
+
+                string secım3 = Console.ReadLine();
+
+                if (secım3 == "1-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "1-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "1-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "1-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "2-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "2-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "2-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "2-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "3-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "3-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "3-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "3-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "4-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "4-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "4-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "4-89")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "5-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "5-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "5-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "5-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "5-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "6-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "6-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "6-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "6-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "7-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "7-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "7-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "7-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "8-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "8-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "8-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "8-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+            }
+            else if (secim2 == "b")
+            {
+                Console.WriteLine("Borcunuz 150 TL'dir");
+                Console.WriteLine("*******************************************");
+                Console.WriteLine("Koltuk Numaranızızı Lütfen Ekrandan Seçiniz.");
+                Console.WriteLine("_______________________________________________");
+                Console.WriteLine("1.Sıra***1-2--3-4--5-6--7-8**M");
+                Console.WriteLine("2.Sıra***1-2--3-4--5-6--7-8**E");
+                Console.WriteLine("3.Sıra***1-2--3-4--5-6--7-8**R");
+                Console.WriteLine("4.Sıra***1-2--3-4--5-6--7-8**D");
+                Console.WriteLine("5.Sıra***1-2--3-4--5-6--7-8**İ");
+                Console.WriteLine("6.Sıra***1-2--3-4--5-6--7-8**V");
+                Console.WriteLine("7.Sıra***1-2--3-4--5-6--7-8**E");
+                Console.WriteLine("8.Sıra***1-2--3-4--5-6--7-8**N");
+                Console.WriteLine("/////////////PERDE////////////");
+                Console.WriteLine("__________________________________");
+                Console.WriteLine("Örnek: 1-12 YA DA 2-89 GİBİ YAZINIZ:)");
+                string secım3 = Console.ReadLine();
+                if (secım3 == "1-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "1-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "1-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "1-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "2-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "2-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "2-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "2-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "3-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "3-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "3-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "3-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "4-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "4-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "4-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "4-89")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "5-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "5-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "5-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "5-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "5-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "6-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "6-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "6-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "6-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "7-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "7-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "7-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "7-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "8-12")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "8-34")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "8-56")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+                if (secım3 == "8-78")
+                {
+                    Console.WriteLine("İYİ SEYİRLER ");
+
+                }
+            }
+
+        }
+    }
+
+        
+}
